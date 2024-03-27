@@ -1,0 +1,34 @@
+{
+	"info": {
+		"_postman_id": "6af3e9e7-a353-4648-8402-10335c31bca6",
+		"name": "VoxxedDays",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "2069735"
+	},
+	"item": [
+		{
+			"name": "rag/prompt",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/rag/prompt?prompt=Tell me something about Bucharest",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"rag",
+						"prompt"
+					],
+					"query": [
+						{
+							"key": "prompt",
+							"value": "Tell me something about Bucharest"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
