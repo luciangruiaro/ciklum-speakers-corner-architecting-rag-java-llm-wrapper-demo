@@ -12,14 +12,16 @@ import static com.continualbot.ragpoc.helper.MessageHelper.printMessage;
 public class Agent {
 
     private final TelegramDelivery telegramDelivery;
+    private final LlmWrapper llmWrapper;
 
-    public Agent(TelegramDelivery telegramDelivery) {
+    public Agent(TelegramDelivery telegramDelivery, LlmWrapper llmWrapper) {
         this.telegramDelivery = telegramDelivery;
+        this.llmWrapper = llmWrapper;
     }
 
-
     public void generateReply(Message message) {
-        String answer = KnowledgeBase.DEFAULT_ANSWER;
+//        String answer = KnowledgeBase.DEFAULT_ANSWER;
+        String answer = llmWrapper.generatePromptResponse(message.text()).get("generation");
         Conversation conversation = new Conversation(message.chat().id().toString(), message.chat().username());
         printMessage(TelegramConfig.MESSAGE_RECEIVED, message);
         telegramDelivery.sendMessage(conversation, answer);
