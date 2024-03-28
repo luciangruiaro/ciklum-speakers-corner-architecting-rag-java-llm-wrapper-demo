@@ -1,4 +1,4 @@
-package com.continualbot.ragpoc.model;
+package com.continualbot.ragpoc.contacts;
 
 
 public class Conversation {

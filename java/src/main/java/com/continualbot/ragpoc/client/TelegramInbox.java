@@ -30,7 +30,6 @@ public class TelegramInbox {
                     try {
                         agent.generateReply(update.message());
                     } catch (Exception e) {
-//                        System.out.printf("warning!");
                         e.printStackTrace();
                     }
                 }
