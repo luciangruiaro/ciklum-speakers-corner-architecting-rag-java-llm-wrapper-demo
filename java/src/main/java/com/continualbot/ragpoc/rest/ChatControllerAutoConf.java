@@ -23,7 +23,8 @@ public class ChatControllerAutoConf {
     }
 
     @GetMapping("/rag/prompt")
-    public Map generate(@RequestParam(value = "inputMessage", defaultValue = "Tell me something about Romania.") String inputMessage) {
+    public Map<String, String> generate(@RequestParam(value = "inputMessage", defaultValue = "Tell me something about Romania.") String inputMessage) {
+        logger.info("inputMessage: {}", inputMessage);
         return Map.of("generation", chatClient.call(inputMessage));
     }
 

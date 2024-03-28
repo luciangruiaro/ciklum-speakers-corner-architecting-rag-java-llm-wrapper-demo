@@ -1,6 +1,5 @@
 package com.continualbot.ragpoc.rest;
 
-import com.continualbot.ragpoc.helper.MessageHelper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.ai.openai.OpenAiChatClient;
@@ -14,7 +13,7 @@ import java.util.Map;
 @RestController
 public class ChatController {
 
-    private static final Logger logger = LoggerFactory.getLogger(MessageHelper.class);
+    private static final Logger logger = LoggerFactory.getLogger(ChatController.class);
     private final OpenAiChatClient chatClient;
 
     @Autowired
@@ -23,7 +22,8 @@ public class ChatController {
     }
 
     @GetMapping("/rag/ask")
-    public Map generate(@RequestParam(value = "inputMessage", defaultValue = "Tell me something about Romania.") String inputMessage) {
+    public Map<String, String> generate(@RequestParam(value = "inputMessage", defaultValue = "Tell me something about Romania.") String inputMessage) {
+        logger.info("inputMessage: {}", inputMessage);
         return Map.of("generation", chatClient.call(inputMessage));
     }
 

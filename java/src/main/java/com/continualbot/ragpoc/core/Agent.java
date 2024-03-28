@@ -1,10 +1,9 @@
 package com.continualbot.ragpoc.core;
 
 
-import com.continualbot.ragpoc.tlgr.TelegramDelivery;
 import com.continualbot.ragpoc.tlgr.TelegramConfig;
+import com.continualbot.ragpoc.tlgr.TelegramDelivery;
 import com.pengrad.telegrambot.model.Message;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import static com.continualbot.ragpoc.helper.MessageHelper.printMessage;
@@ -12,8 +11,11 @@ import static com.continualbot.ragpoc.helper.MessageHelper.printMessage;
 @Component
 public class Agent {
 
-    @Autowired
-    private TelegramDelivery telegramDelivery;
+    private final TelegramDelivery telegramDelivery;
+
+    public Agent(TelegramDelivery telegramDelivery) {
+        this.telegramDelivery = telegramDelivery;
+    }
 
 
     public void generateReply(Message message) {

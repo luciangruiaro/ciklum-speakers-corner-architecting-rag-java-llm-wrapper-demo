@@ -9,7 +9,10 @@ import org.springframework.stereotype.Service;
 public class MessageHelper {
     private static final Logger logger = LoggerFactory.getLogger(MessageHelper.class);
 
+    private MessageHelper() {
+    }
+
     public static void printMessage(String messageType, Message message) {
-        logger.info(messageType + message.chat().id() + ", " + message.chat().username() + " -> " + message.text());
+        logger.info("{} {}, {} -> {}", messageType, message.chat().id(), message.chat().username(), message.text());
     }
 }

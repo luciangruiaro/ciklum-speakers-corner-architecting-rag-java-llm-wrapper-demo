@@ -4,9 +4,8 @@ import lombok.Getter;
 
 @Getter
 public class Conversation {
-    public String chatId;
-    public String username;
-
+    private String chatId;
+    private String username;
 
     public Conversation(String chatId, String username) {
         this.chatId = chatId;

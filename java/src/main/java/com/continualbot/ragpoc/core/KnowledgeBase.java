@@ -7,4 +7,7 @@ public class KnowledgeBase {
 
     public static final String DEFAULT_ANSWER = "Hello human! How are you?";
 
+    private KnowledgeBase() {
+    }
+
 }
