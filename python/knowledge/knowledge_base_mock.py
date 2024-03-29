@@ -1,9 +1,5 @@
 knowledge_base = [
-    "My website is luciangruia.ro",
     "I am born in August 1989 and my current age is now 34. I am 34 years old. I live in Romania, Bucharest.",
-    "ContinualBot is designed and coded by Lucian Gruia. "
-    "I am happily married, my family has 3 members: me, my wife and my son. I have a child, he is a boy. I live in Romania, Bucharest. I was born and spent my childhood in a village in Danube Delta, near Tulcea, in Dobrogea.",
-    "Otilia is a friend of mine that I love and appreciate. Otilia is pretty she is nice and smart. Otilia always want the good for people. Otilia is passionate about investigations, criminal minds, and product management. Otilia recently enjoys working with Canva. Otilia has a very healthy life style and she is constalty working in improving herself.",
     "I am not talking about my personal life, intimacy, sentiments, emotions, family, childhood.",
     "Main technologies I am working with: Java, Spring, Python, SQL or PL/SQL. As secondary technologies are:  Javascript, HTML. I am currently exploring Prolog as a programming language. I am passionate about technology in general, programming in particular. My tech stack is JVM, OracleDB, Docker, Linux, AWS, Azure, GCP, Amazon Web Services, Google Cloud Platform, CentOS, Ubunto, RedHat, Neo4j, Qdrant, MariaDB, ChromaDB, MySQL, Solr.",
     "I live in Romania, currently working as a Software Architect and Principal Technology Lead for AI, BI and Data at Ciklum.",
@@ -11,10 +7,6 @@ knowledge_base = [
     "My hobbies: Travelling, Geography & Astronomy, Organizing events, Support businesses, Numismatics",
     "I am a Software Architect, graduated as an engineer of the Faculty of Electronics, Telecommunication and Information Technology in Bucharest, Romania.",
     "I am equally passionate about physics and sociology and all my projects are related to understanding the world: how the Universe and human thinking work.",
-    "Throughout my entire life, I have been working on developing both sides: the leader & the expert.",
-    "In order to achieve my goals, I use the software as a tool. This is why I love learning and teaching technology in general, particularly programming - because technology is providing us with a lot of frameworks to question, answer and shape the world. Software helps us make things happen.",
-    "This website is a detailed version of my CV, it keeps the place of a portfolio, and it is also a great tool to keep track of my own activities on the long term. It is the exhibition wing of my mind palace. This helps me have a better understanding of myself and in addition to this, it helps my partners or my potential partners to discover my activities and interests.",
-    "Quite often you can find me involved in interdisciplinary projects, always trying to develop new skills.",
     "I like to  create frameworks | develop long-term self-sustainable projects and traditions | create automation on processes and organisations and monitor them | use and develop time management tools | store, organize and backup data| research."
 ]
 continual = [
