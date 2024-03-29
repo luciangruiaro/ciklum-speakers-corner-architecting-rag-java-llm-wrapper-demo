@@ -12,7 +12,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{host}}/rag/prompt?prompt=Tell me something about Bucharest",
+					"raw": "{{host}}/rag/prompt?inputMessage=Tell me something about Isaac Newton",
 					"host": [
 						"{{host}}"
 					],
@@ -22,7 +22,31 @@
 					],
 					"query": [
 						{
-							"key": "prompt",
+							"key": "inputMessage",
+							"value": "Tell me something about Isaac Newton"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "rag/ask",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/rag/ask?inputMessage=Tell me something about Bucharest",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"rag",
+						"ask"
+					],
+					"query": [
+						{
+							"key": "inputMessage",
 							"value": "Tell me something about Bucharest"
 						}
 					]

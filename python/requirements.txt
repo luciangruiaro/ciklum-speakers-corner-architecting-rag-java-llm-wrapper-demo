@@ -1,0 +1,9 @@
+flask
+openai
+qdrant_client
+bs4
+requests
+fastembed
+flask-cors
+qdrant-client[fastembed]
+llama-index-embeddings-openai
