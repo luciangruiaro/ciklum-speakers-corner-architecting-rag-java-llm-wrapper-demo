@@ -2,8 +2,8 @@ from datetime import datetime
 
 from flask import Flask, Blueprint, request, jsonify
 
-from python.knowledge.qdrant import query_qdrant
-from python.llm.openai import get_llm_response
+from knowledge.qdrant import query_qdrant
+from llm.openai import get_llm_response
 
 app = Flask(__name__)
 blueprint_conv = Blueprint('blueprint_conv', __name__)

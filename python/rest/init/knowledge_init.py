@@ -1,6 +1,6 @@
 from flask import Flask, Blueprint, request
 
-from python.knowledge.qdrant import insert_qdrant
+from knowledge.qdrant import insert_qdrant
 
 app = Flask(__name__)
 blueprint_ki = Blueprint('blueprint_ki', __name__)

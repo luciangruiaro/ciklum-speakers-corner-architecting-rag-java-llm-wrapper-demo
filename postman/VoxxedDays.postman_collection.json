@@ -53,6 +53,58 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "knowledge_init",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"source_name\": \"webpage_fix\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/knowledge_init",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"knowledge_init"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "query",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"prompt\": \"What do you think about Voxxed Days Romania?\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/query",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"query"
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }

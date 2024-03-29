@@ -21,7 +21,8 @@ public class Agent {
 
     public void generateReply(Message message) {
 //        String answer = KnowledgeBase.DEFAULT_ANSWER;
-        String answer = llmWrapper.generatePromptResponse(message.text()).get("generation");
+        String answer = llmWrapper.generatePromptResponse(message.text());
+//        String answer = llmWrapper.queryPy(message.text());
         Conversation conversation = new Conversation(message.chat().id().toString(), message.chat().username());
         printMessage(TelegramConfig.MESSAGE_RECEIVED, message);
         telegramDelivery.sendMessage(conversation, answer);
