@@ -7,7 +7,8 @@ import org.springframework.stereotype.Service;
 import java.util.Map;
 
 @Service
-public class LlmWrapper {
+public class LlmWrapper {git config --list --local
+
     private final OpenAiChatClient chatClient;
 
     @Autowired
@@ -16,7 +17,10 @@ public class LlmWrapper {
     }
 
     public String generatePromptResponse(String prompt) {
-        return Map.of("generation", chatClient.call(prompt)).get("generation");
+        String context = "";
+//                context += " Please answer using sophisticated words, as you would when writing a scientific paper.";
+                context += " Please check my words as if you're explaining to a 7-year-old.";
+        return Map.of("generation", chatClient.call(prompt + context)).get("generation");
     }
 
 }

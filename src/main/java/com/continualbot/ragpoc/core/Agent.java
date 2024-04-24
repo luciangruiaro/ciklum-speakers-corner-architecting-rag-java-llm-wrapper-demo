@@ -1,6 +1,7 @@
 package com.continualbot.ragpoc.core;
 
 
+import com.continualbot.ragpoc.knowledge.KnowledgeBase;
 import com.continualbot.ragpoc.tlgr.TelegramConfig;
 import com.continualbot.ragpoc.tlgr.TelegramDelivery;
 import com.pengrad.telegrambot.model.Message;
@@ -20,7 +21,7 @@ public class Agent {
     }
 
     public void generateReply(Message message) {
-//        String answer = KnowledgeBase.DEFAULT_ANSWER;
+//                String answer = KnowledgeBase.DEFAULT_ANSWER;
         String answer = llmWrapper.generatePromptResponse(message.text());
         Conversation conversation = new Conversation(message.chat().id().toString(), message.chat().username());
         printMessage(TelegramConfig.MESSAGE_RECEIVED, message);
