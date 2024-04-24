@@ -1,2 +1,3 @@
-# voxxed-days-24-rag-context-aware
-Hands-on Lab: Coding Context-Aware RAG Applications for Enterprise-Level
+# Ciklum Speakers' Corner
+Architecting Scalable AI RAG Systems: From Startup to Enterprise.
+A Live Coding Session
